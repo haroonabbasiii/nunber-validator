@@ -1,8 +1,5 @@
 function NumberValidator(Str) {
     var count = 0;
-    for(var i=0;Str[i]==" ";i++)
-    {
-    }
     if (Str[count] == "1") {
         ++count;
         if (Str[count] == " ") {
@@ -87,12 +84,37 @@ function NumberValidator(Str) {
             }
         }
     }
-    else if(Str=="5555555555")
-    {
-        return true;
+    else if (Str[count] == "5") {
+        ++count;
+        if (Str[count] == "5") {
+            ++count;
+            if (Str[count] == "5") {
+                ++count;
+                if (Str[count] == "5") {
+                    ++count;
+                    if (Str[count] == "5") {
+                        ++count;
+                        if (Str[count] == "5") {
+                            ++count;
+                            if (Str[count] == "5") {
+                                ++count;
+                                if (Str[count] == "5") {
+                                    ++count;
+                                    if (Str[count] == "5") {
+                                        ++count;
+                                        if (Str[count] == "5") {
+                                            return true;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
-    else if(Str=="555-555-5555")
-    {
+    else if (Str[count] == "555-555-5555") {
         return true;
     }
     return false;
